@@ -30,10 +30,11 @@ const PetDetailsDogs = ({ dogId, onClose}) => {
           <p>
             Meet our adorable little bundle of joy, {selectedDog.name}! This
             charming puppy is a heart-stealer with her soft, fluffy coat and
-            irresistible puppy eyes. She's a lively and curious companion,
+            irresistible puppy eyes. {selectedDog.name} is a lively and curious companion,
             always eager to explore the world around her with unbridled 
-            enthusiasm. Her sweet and playful nature <br/> is infectious, instantly
-            bringing a smile to anyone fortunate enough to meet her. {selectedDog.name} is a mixed breed with a hint of {selectedDog.breed} and a touch of Border Collie, giving her an ideal balance of intelligence and affection. She's a quick learner, picking up new commands and tricks in no time, and her boundless energy makes her the perfect partner for outdoor adventures and long walks. Whether it's chasing after a ball or simply enjoying a sunny day, {selectedDog.name} is up for any activity that involves spending time with her human friends.
+            enthusiasm. Her sweet and playful nature  is infectious, instantly
+            bringing a smile to anyone fortunate enough to meet her. <br/><br/> {selectedDog.name} is a quick learner, 
+             picking up new commands and tricks in no time, and her boundless energy makes her the perfect partner for outdoor adventures and long walks. Whether it's chasing after a ball or simply enjoying a sunny day, {selectedDog.name} is up for any activity that involves spending time with her human friends.
           </p>
         </div>
         <div className="pet-details__info">

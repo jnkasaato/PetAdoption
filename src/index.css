@@ -445,7 +445,7 @@ letter-spacing: 2px;
 /*ourstory__bigdreams*/
 .short_interlude{
   background-color: var(--clr-beige);
-  padding: 50px 200px;
+  padding: 50px 300px;
 
 }
 
@@ -507,7 +507,10 @@ letter-spacing: 2px;
 
 /* --Our Dogs-- */
 
-
+.our-dogs,
+.our-cats{
+  padding:0 0 100px 0;
+}
 .pets-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -665,7 +668,7 @@ letter-spacing: 2px;
 
 .pet-details {
   width: 1300px;
-  height: 700px;
+  height: 750px;
   background-color: var(--clr-beige);
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -674,7 +677,7 @@ letter-spacing: 2px;
   overflow: auto;
   border-radius: 30px;
   position:fixed;
-  top:50px;
+  top:25px;
 }
 
 .pet-details__left{
@@ -695,12 +698,15 @@ letter-spacing: 2px;
 
 .pet-details__right{
   padding:30px;
+  text-align:right;
 }
 
-.pet-details__info p{
+.pet-details__info p,
+.pet-details__intro p{
   text-align: left;
   position: relative; /* Add this line to make ::after work as expected */
   margin-bottom: 20px; /* Adjust the margin to your liking */
+  text-align:left;
 }
 
 .pet-details__info p::after {
@@ -775,6 +781,10 @@ h3::after {
   background-color: var(--clr-beige);
   padding: 50px 300px;
 }
+.volunteer{
+  padding:  100px 0;
+}
+
 
 
 
@@ -848,8 +858,9 @@ h3::after {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-family: Nixie One; 
+  font-family: Aboreto; 
   font-weight: bold;
+  font-size: 1em;
 }
 
 /* Styling for form submit button on hover */
@@ -909,7 +920,7 @@ footer {
   font-family: Nixie One;
 }
 
-input {
+.subscribe-section input {
   padding: 5px 10px;
   font-family: Nixie One;
   color: var(--clr-grey);

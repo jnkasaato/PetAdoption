@@ -9,7 +9,7 @@ import volunteer5 from '../images/volunteer5.png';
 
 const Volunteer = () => {
   return (
-    <div>
+    <div className="volunteer">
       <div id="top"></div>
       <div style={{ position: 'relative' }}>
         <img src={volunteer1} alt="ourstory 1"className="intro-photo"/>
@@ -33,7 +33,7 @@ const Volunteer = () => {
         <div className= 'home__text2'>
           <h2>Join our team</h2>
           <p>
-            Join our team and become part of a rewarding journey where you can make a meaningful difference in the lives of our furry friends. We're excited to welcome you to our compassionate community, where every act of kindness has a lasting impact. <br/><br/>Our adoptable cats find their temporary home at the PetSmart adoption center in Cambridge, and we're looking for dedicated volunteers like you to create a haven of care and comfort for them.
+            Join our team and become part of a rewarding journey where you can make a meaningful difference in the lives of our furry friends. We're excited to welcome you to our compassionate community, where every act of kindness has a lasting impact. <br/><br/>Our adoptable cats find their temporary home at our adoption center in Cambridge, and we're looking for dedicated volunteers like you to create a haven of care and comfort for them.
           </p>
         </div>
       </div>

@@ -29,12 +29,7 @@ const PetDetails = ({ catId, onClose}) => {
           <h2>{selectedcat.name}</h2>
           <h3>{selectedcat.breed}</h3>
           <p>
-            Meet our adorable little bundle of joy, {selectedcat.name}! This
-            charming puppy is a heart-stealer with her soft, fluffy coat and
-            irresistible puppy eyes. She's a lively and curious companion,
-            always eager to explore the world around her with unbridled 
-            enthusiasm. Her sweet and playful nature <br/> is infectious, instantly
-            bringing a smile to anyone fortunate enough to meet her. {selectedcat.name} is a mixed breed with a hint of {selectedcat.breed} and a touch of Border Collie, giving her an ideal balance of intelligence and affection. She's a quick learner, picking up new commands and tricks in no time, and her boundless energy makes her the perfect partner for outdoor adventures and long walks. Whether it's chasing after a ball or simply enjoying a sunny day, {selectedcat.name} is up for any activity that involves spending time with her human friends.
+             Meet our charming feline friend, {selectedcat.name}, a loving and curious companion who's ready to steal your heart! This adorable cat is bursting with personality and has a gentle demeanor that will instantly put a smile on your face. With a luxurious coat that's perfect for cuddles, this cat promises hours of purring contentment as you share warm moments together. <br/><br/>Our lovely cat is incredibly sociable, always eager to explore new nooks and crannies or simply relax by your side. Their striking eyes hold a world of curiosity, and their playful nature ensures that you'll never have a dull moment in their delightful company. This feline friend is the ideal addition to any loving home, adapting effortlessly to your space and forming a special bond that will last a lifetime.
           </p>
         </div>
         <div className="pet-details__info">

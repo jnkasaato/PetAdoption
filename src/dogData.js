@@ -143,7 +143,7 @@ const dogData = {
     age: "3 months",
     age_type: "Puppy",
     gender: "Female",
-    image: "https://ipfs.io/ipfs/QmQ2UVzDCuaGjRoLobK57BgK93peGV2cwSqT9j792W5DMd",
+    image: "https://ipfs.io/ipfs/QmV7XTNMfNSJdXm3hUARq8q1Sw6Bp4mHVxdz8YGYTGmGAf",
     cost: 420,
     goodWith: "kids and other dogs",
     coatLength: "Short",

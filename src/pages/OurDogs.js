@@ -8,7 +8,6 @@ const OurDogs = () => {
   const dogs = dogData.dogs;
   const [showPetDetails, setShowPetDetails] = useState(false);
   const [selectedDogId, setSelectedDogId] = useState(null);
-  const [dogCardPosition, setDogCardPosition] = useState({ top: 0, left: 0 });
 
   const handleViewDetails = (id) => {
     // Set the selected dog id and dog card position
@@ -69,7 +68,7 @@ const OurDogs = () => {
                 className="view-details-button"
                 onClick={(event) => {     
                   event.stopPropagation();
-                  handleViewDetails(dog.id, dogCardPosition);
+                  handleViewDetails(dog.id);
                 }}
               >
                 <h1>View Details</h1>
