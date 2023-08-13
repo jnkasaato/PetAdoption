@@ -98,6 +98,7 @@ p{
   overflow: hidden;
    transform: rotate(180deg)
  }
+
  .nav-curtain{
   position: absolute;
   bottom: -80px;
@@ -109,21 +110,19 @@ p{
   transform: rotate(180deg)
  }
 
-
-
 /* --------------------------------------------------------------------------------------------- */
 
-/* --Nav-- */
+/* --Navigation-- */
 
 .nav {
-  background-color: #ffffff;
-  margin: 50px 0;
+  background-color: var(--clr-white);
+  margin-top: 20px;
   display: flex;
-  justify-content: space-around; /* Evenly space items */
-  align-items: center; /* Vertically center items */
-  list-style: none; /* Remove default list styling */
-
+  justify-content: space-between;
+  align-items: center; 
+  list-style: none;
 }
+
 
 .nav img{
   width:100px;
@@ -154,8 +153,6 @@ li {
   margin: 0 30px;
 }
 
-
-
 li:last-child {
   margin-right: 0;
 }
@@ -163,22 +160,30 @@ li:last-child {
 Link {
   color: #fff;
   text-decoration: none;
-  padding: 10px;
 }
 
-.nav-link, .ourdogs-link {
-  text-decoration: none; /* Remove the underline */
+.nav-link-pet,
+.nav-link, 
+.ourdogs-link {
+  text-decoration: none; 
   list-style-type: none;
 }
 
-
-
-
+.nav-link-pet h1{
+  color:var(--clr-white);
+  background-color:var(--clr-gold);
+  padding: 10px;
+  border-radius:5px;
+}
+.nav-link-pet h1:hover{
+  color:var(--clr-white);
+  background-color:var(--clr-blue);
+ 
+}
 
 /* --------------------------------------------------------------------------------------------- */
 
 /* --HomePage-- */
-
 
 .homepage__intro h1{
    font-size: 1.2em;
@@ -309,7 +314,7 @@ Link {
   align-items: center;
   background-color: rgba(255, 255, 255, 0.8);
   transition: opacity 0.3s;
-   opacity: 1; /* Show the overlay on hover */
+   opacity: 1; 
    padding:20px;
 }
 
@@ -320,7 +325,7 @@ Link {
 .overlay h1,
 .overlay p {
   margin: 0;
-  padding: 10px; /* Add padding for better readability */
+  padding: 10px; 
 }
 
 .overlay h1 {
@@ -349,7 +354,6 @@ Link {
   align-items: center;
    align-self: center ;
    border-radius: 40px;
-
 }
 
 
@@ -364,7 +368,6 @@ Link {
   padding: 50px 300px;
 }
 
-
 .ourstory__intro h2,
 .volunteer__intro h2{
 font-size: 1.6em;
@@ -373,11 +376,9 @@ text-align: center;
 letter-spacing: 2px;
 }
 
-
 .ourstory__main  {
   background-color: var(--clr-beige);
   padding:100px;
-
 }
 
 .ourstory__main  .first-class {
@@ -423,7 +424,6 @@ letter-spacing: 2px;
 
 .letter {
   margin: 100px 400px;
- 
 }
 
 .letter p{
@@ -442,11 +442,9 @@ letter-spacing: 2px;
   border-radius: 30px;
 }
 
-/*ourstory__bigdreams*/
 .short_interlude{
   background-color: var(--clr-beige);
   padding: 50px 300px;
-
 }
 
 .ourstory__farm{
@@ -502,7 +500,6 @@ letter-spacing: 2px;
   text-align: left;
 }
 
-
 /* --------------------------------------------------------------------------------------------- */
 
 /* --Our Dogs-- */
@@ -511,6 +508,47 @@ letter-spacing: 2px;
 .our-cats{
   padding:0 0 100px 0;
 }
+
+.our-pets__filters {
+  height: 100px;
+  width:100%;
+  background-color: var(--clr-beige);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 27px 0 0px 0;
+}
+.our-pets__reset-filters-button,
+.our-pets__filters select {
+  padding: 10px;
+  margin: 5px;
+  width: 200px;
+  height:40px;
+  border: 1px solid var(--clr-gold);
+  background-color: transparent;
+  color: var(--clr-gold);
+  font-family: Aboreto;
+  font-size: 16px;
+  font-weight:800;
+}
+
+.our-pets__filters select option {
+  color: var(--clr-gold);
+  font-family: Aboreto;
+  font-size: 16px;
+}
+
+.our-pets__reset-filters-button{
+  text-align: center;
+  background-color: var(--clr-gold);
+  color:var(--clr-white);
+}
+
+.our-pets__reset-filters-button:hover {
+  background-color:var(--clr-beige);
+  color: var(--clr-gold);
+}
+
 .pets-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -526,10 +564,10 @@ letter-spacing: 2px;
   padding: 0px;
   border-radius: 5px;
   text-align: left;
-  position: relative; /* To position the golden line */
+  position: relative;
   border-radius: 40px;
-
 }
+
 .pet-info{
   padding: 0 50px;
 }
@@ -539,7 +577,7 @@ letter-spacing: 2px;
 }
 
 .pet-image {
-  width: 100%; /* Make the image the entire width of the box */
+  width: 100%; 
   height: 450px;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -552,7 +590,7 @@ letter-spacing: 2px;
 }
 
 .image-container {
-  position: relative; /* Relative positioning for the parent container */
+  position: relative; 
 }
 
 .pet-card p {
@@ -561,23 +599,19 @@ letter-spacing: 2px;
   color:var(--clr-dark-grey);
   text-align: left;
 }
+
 .pet-card h2 {
-  margin: 10px 0; /* Adjust the vertical margin as needed */
+  margin: 10px 0; 
   color: var(--clr-gold);
   text-align: left;
   margin-left: 50px;
   margin-right: 50px;
-  border-top: dotted 2px var(--clr-gold);
-
- 
 }
 
 .pet-card h1 {
   color: var(--clr-dark-grey);
   padding:0;
-
 }
-
 
 .pet-info p::after{
   content: '';
@@ -586,7 +620,7 @@ letter-spacing: 2px;
   left: 0%;
   width: 100%;
   height: 1px;
-  background-color: var(--clr-gold); /* Golden color */
+  background-color: var(--clr-gold);
   text-align: left;
 }
 
@@ -596,9 +630,10 @@ letter-spacing: 2px;
 
 .text-golden {
   margin-left: 250px;
-  color: var(--clr-gold); /* Golden color */
+  color: var(--clr-gold);
   display: flex;
   align-items: center; 
+  padding: 0 0 5px 0;
 }
 
 
@@ -656,15 +691,9 @@ letter-spacing: 2px;
   overflow: hidden;
 }
 
-
-
-
-
-
 /* --------------------------------------------------------------------------------------------- */
 
 /* --Details-- */
-
 
 .pet-details {
   width: 1300px;
@@ -691,10 +720,7 @@ letter-spacing: 2px;
 
 .pet-details__intro h1{
   padding: 0 0 10px 0;
- 
 }
-
-
 
 .pet-details__right{
   padding:30px;
@@ -704,31 +730,29 @@ letter-spacing: 2px;
 .pet-details__info p,
 .pet-details__intro p{
   text-align: left;
-  position: relative; /* Add this line to make ::after work as expected */
-  margin-bottom: 20px; /* Adjust the margin to your liking */
+  position: relative;
+  margin-bottom: 20px; 
   text-align:left;
 }
 
 .pet-details__info p::after {
   content: '';
   position: absolute;
-  bottom: -5px; /* Adjust the position to your liking */
+  bottom: -5px; 
   left: 0;
   width: 100%;
   height: 1.5px;
   background-color: var(--clr-gold);
 }
 
-
-
 h3 {
   font-family: Aboreto;
   color: var(--clr-gold);
   text-align: center;
   padding: 0;
-  position: relative; /* Added */
-  margin-top: 10px; /* Adjust the spacing above the <h3> element */
-  margin-bottom: 10px; /* Adjust the spacing below the <h3> element */
+  position: relative;
+  margin-top: 10px; 
+  margin-bottom: 10px;
   letter-spacing: 2px;
 }
 
@@ -736,23 +760,20 @@ h3::before,
 h3::after {
   content: '';
   display: block;
-  width: 100%; /* Line width covers the entire width of the <h3> element */
-  height: 1.5px; /* Line height/thickness */
-  background-color: var(--clr-gold); /* Golden color */
+  width: 100%; 
+  height: 1.5px; 
+  background-color: var(--clr-gold); 
   position: absolute;
   left: 0;
 }
 
 h3::before {
-  top: -8px; /* Position the line above the <h3> element */
+  top: -8px; 
 }
 
 h3::after {
-  bottom: -8px; /* Position the line below the <h3> element */
+  bottom: -8px; 
 }
-
-
-
 
 .pet-details__info h1{
   color: var(--clr-gold);
@@ -764,17 +785,14 @@ h3::after {
   width: 570px;
 }
 
-
 .pet-details__info h1:hover{
   color: var(--clr-beige);
   background-color: var(--clr-gold);
 }
 
-
 /* --------------------------------------------------------------------------------------------- */
 
 /* --Volunteer-- */
-
 
 .volunteer__intro{
   text-align: center;
@@ -782,11 +800,8 @@ h3::after {
   padding: 50px 300px;
 }
 .volunteer{
-  padding:  100px 0;
+  padding:  0 0 100px 0;
 }
-
-
-
 
 /* --------------------------------------------------------------------------------------------- */
 
@@ -795,8 +810,6 @@ h3::after {
 .adopt__container{
   margin:70px 300px ;
 }
-
-
 
 /* --------------------------------------------------------------------------------------------- */
 
@@ -808,7 +821,7 @@ h3::after {
   padding:50px;
 
 }
-/* Styling for the form container */
+
 .contact-container {
   width: 80%;
   max-width: 600px;
@@ -818,10 +831,8 @@ h3::after {
   background-color: var(--clr-white);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding:70px 100px;
-
 }
 
-/* Styling for form labels */
 .contact-label {
   display: block;
   margin-bottom: 8px;
@@ -829,7 +840,6 @@ h3::after {
   font-family: Nixie One;
 }
 
-/* Styling for form input fields */
 .contact-input {
   width: 100%;
   padding: 8px;
@@ -838,7 +848,6 @@ h3::after {
   border-radius: 4px;
 }
 
-/* Styling for form textarea */
 .contact-textarea {
   width: 100%;
   height: 120px;
@@ -848,7 +857,6 @@ h3::after {
   border-radius: 4px;
 }
 
-/* Styling for form submit button */
 .contact-button {
   display: block;
   width: 100%;
@@ -863,29 +871,18 @@ h3::after {
   font-size: 1em;
 }
 
-/* Styling for form submit button on hover */
 .contact-button:hover {
   background-color: var(--clr-blue);
 }
-
-
 
 /* --------------------------------------------------------------------------------------------- */
 
 /* --Footer-- */
 
-/* Footer CSS */
-
-/* Add this CSS to your stylesheet or create a new one */
-
-/* Global styles */
-
-
-/* Footer styles */
-footer {
+.footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   background-color: var(--clr-dark-grey);
   padding: 40px 50px;
 }
@@ -920,12 +917,34 @@ footer {
   font-family: Nixie One;
 }
 
+.subscribe-button,
 .subscribe-section input {
-  padding: 5px 10px;
-  font-family: Nixie One;
-  color: var(--clr-grey);
-  margin:20px;
+  padding: 5px ;
+  font-family: Aboreto;
+  color: var(--clr-white);
+  margin-right: 10px;
+  border: none; 
+  background-color: var(--clr-blue);
+ 
+  font-weight: 800;
+  font-size:1em;
+  width:300px;
 }
+
+.subscribe-button {
+  width: 100px;
+  font-family: Aboreto;
+  border: 1px solid var(--clr-blue);
+  background-color: transparent;
+  color: var(--clr-blue);
+}
+
+.subscribe-button:hover{
+  background-color: var(--clr-blue);
+  color: var(--clr-white);
+  border: 1px solid var(--clr-blue);
+}
+
 
 .contact-section p,
 .subscribe-section p {
@@ -935,9 +954,8 @@ footer {
   padding:20px;
 }
 
-.contact-section p{
-  padding:20px;
-}
+
+
 
 
 

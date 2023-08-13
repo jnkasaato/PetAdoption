@@ -1,7 +1,5 @@
 import React from 'react';
 import home1 from '../images/home1.png'; 
-import home2 from '../images/home2.png'; 
-import home3 from '../images/home3.png'; 
 import home4 from '../images/home4.png'; 
 import home5 from '../images/home5.png'; 
 import home6 from '../images/home6.png'; 
@@ -10,8 +8,6 @@ import home8 from '../images/home8.png';
 import home9 from '../images/home9.png'; 
 import curtainBeige from '../images/curtain-beige.png'; 
 import curtainWhite from '../images/curtain-white.png';
-
-
 import { BrowserRouter as Router, Route, Link, Routes, Outlet } from 'react-router-dom';
 import OurDogs from './OurDogs';
 import OurCats from './OurCats';
@@ -36,8 +32,7 @@ const Homepage = () => {
           Who we are
         </h1>
         <h2>
-          Here at, HappyTail Pet Haven, we are committed to fulfilling 
-          dreams by providing families with the chance to experience the love of a dog.
+          Our mission is to connect loving homes with pets in need, fostering joyful and lasting relationships while promoting responsible pet ownership and animal welfare.
         </h2>
         <img src={curtainBeige} alt="curtain1" className="bottom-curtain-down"/>
       </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import curtainGrey from '../images/curtain-grey.png';
+import curtainWhite from '../images/curtain-white.png';
 
 const Contact = () => {
   const [firstName, setFirstName] = useState('');
@@ -27,7 +27,9 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact">
+    <div className="contact" style={{position:"relative"}}>
+      <img src={curtainWhite} alt="curtain-white" className="top-curtain-down" />
+          
       <div id="top"></div>
       <div className="contact-container">
         <h1>We want to get to know you</h1>
